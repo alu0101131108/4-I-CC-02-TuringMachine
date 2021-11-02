@@ -2,4 +2,4 @@
 
 Para compilar, situese en */build* y ejecute el comando ```make```.
 
-El ejecutable se genera en el directorio */build*.
+El ejecutable se genera en el directorio */build* bajo el nombre *exe*.
