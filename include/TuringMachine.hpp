@@ -22,7 +22,7 @@ class TuringMachine {
     TuringMachine();
     void loadFromFile(std::string filename);
     void logInfo();
-    void logBandContent();
+    void log();
     void logTransitions();
     void addTransition(Transition transition);
     bool validateString(std::string string);

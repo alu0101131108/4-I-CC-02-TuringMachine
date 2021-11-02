@@ -60,8 +60,11 @@ void Band::moveLeft()
 
 void Band::moveRight() 
 {
-  if (headIndex < content.size() - 1) {
+  if (headIndex < content.size() - 2) {
     // std::cout << "Band warning - Moving outside content" << std::endl;
+    headIndex++;
+  } else {
+    content.push_back(whiteSymbol);
     headIndex++;
   }
 }

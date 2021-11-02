@@ -87,9 +87,7 @@ void TuringMachine::loadFromFile(std::string filename)
 void TuringMachine::logInfo() 
 {
   std::cout << "INFORMATION" << std::endl;
-  states.logAlphabet();
-  std::cout << "Initial State: " << states.getInitial() << std::endl;
-  std::cout << "Current State: " << states.get() << std::endl;
+  states.logInfo();
   band.logAlphabets();
   band.logContent();
   std::cout << "White Symbol: " << whiteSymbol << std::endl;
@@ -97,9 +95,10 @@ void TuringMachine::logInfo()
   std::cout << std::endl;
 }
 
-void TuringMachine::logBandContent() 
+void TuringMachine::log() 
 {
   band.logContent();
+  std::cout << "State: " << states.get() << std::endl;
 }
 
 void TuringMachine::logTransitions() 

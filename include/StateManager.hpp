@@ -23,6 +23,7 @@ class StateManager {
     bool isValid();
     void checkInAlphabet(std::string symbol);
     void logAlphabet();
+    void logInfo();
     void clear();
   
 };

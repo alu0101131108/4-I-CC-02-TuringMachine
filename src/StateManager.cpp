@@ -67,6 +67,17 @@ void StateManager::logAlphabet()
   std::cout << "}" << std::endl;
 }
 
+void StateManager::logInfo() 
+{
+  logAlphabet();
+  std::cout << "Initial State: " << initial << std::endl;
+  std::cout << "Current State: " << current << std::endl;
+  std::cout << "Final States: {";
+  for (int i = 0; i < valid.size(); i++)
+    std::cout << valid[i] << (i != valid.size() - 1 ? ", " : "");
+  std::cout << "}" << std::endl;
+}
+
 void StateManager::clear() 
 {
   current = initial;
